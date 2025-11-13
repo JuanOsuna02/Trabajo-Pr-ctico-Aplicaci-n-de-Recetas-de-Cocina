@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pasta Carbonara",
+    "descripcion": "Receta clásica italiana de pasta con salsa cremosa de huevo y panceta",
+    "imagen": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800",
+    "tiempoPreparacion": "30 minutos",
+    "dificultad": "Media",
+    "porciones": 4,
+    "ingredientes": [
+      { "cantidad": "400", "unidad": "g", "nombre": "Spaghetti" },
+      { "cantidad": "200", "unidad": "g", "nombre": "Panceta o tocino" },
+      { "cantidad": "4", "unidad": "unidades", "nombre": "Huevos" },
+      { "cantidad": "100", "unidad": "g", "nombre": "Queso parmesano rallado" },
+      { "cantidad": "1", "unidad": "pizca", "nombre": "Pimienta negra" },
+      { "cantidad": "1", "unidad": "pizca", "nombre": "Sal" }
+    ],
+    "pasos": [
+      "Cocinar la pasta en agua hirviendo con sal hasta que esté al dente",
+      "Mientras tanto, cortar la panceta en cubos pequeños y dorarla en una sartén",
+      "Batir los huevos con el queso parmesano rallado y pimienta",
+      "Escurrir la pasta reservando un poco del agua de cocción",
+      "Mezclar la pasta caliente con la panceta fuera del fuego",
+      "Agregar la mezcla de huevo y queso, mezclando rápidamente",
+      "Si es necesario, agregar un poco del agua de cocción para crear una salsa cremosa",
+      "Servir inmediatamente con más queso parmesano y pimienta"
+    ],
+    "categoria": "Platos Principales"
+  },
+  {
+    "id": 2,
+    "titulo": "Ensalada César",
+    "descripcion": "Ensalada fresca con lechuga romana, crutones caseros y aderezo césar",
+    "imagen": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800",
+    "tiempoPreparacion": "20 minutos",
+    "dificultad": "Fácil",
+    "porciones": 2,
+    "ingredientes": [
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Lechuga romana grande" },
+      { "cantidad": "100", "unidad": "g", "nombre": "Pechuga de pollo" },
+      { "cantidad": "50", "unidad": "g", "nombre": "Queso parmesano" },
+      { "cantidad": "2", "unidad": "tazas", "nombre": "Crutones" },
+      { "cantidad": "4", "unidad": "cucharadas", "nombre": "Aderezo césar" }
+    ],
+    "pasos": [
+      "Lavar y secar la lechuga romana",
+      "Cortar la lechuga en trozos medianos",
+      "Cocinar la pechuga de pollo a la plancha y cortarla en tiras",
+      "En un bowl grande, mezclar la lechuga con el aderezo",
+      "Agregar el pollo, crutones y queso parmesano",
+      "Mezclar bien y servir inmediatamente"
+    ],
+    "categoria": "Ensaladas"
+  },
+  {
+    "id": 3,
+    "titulo": "Pizza Margarita",
+    "descripcion": "Pizza clásica con salsa de tomate, mozzarella y albahaca fresca",
+    "imagen": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800",
+    "tiempoPreparacion": "45 minutos",
+    "dificultad": "Media",
+    "porciones": 6,
+    "ingredientes": [
+      { "cantidad": "500", "unidad": "g", "nombre": "Harina 000" },
+      { "cantidad": "300", "unidad": "ml", "nombre": "Agua tibia" },
+      { "cantidad": "10", "unidad": "g", "nombre": "Levadura seca" },
+      { "cantidad": "200", "unidad": "g", "nombre": "Queso mozzarella" },
+      { "cantidad": "150", "unidad": "g", "nombre": "Salsa de tomate" },
+      { "cantidad": "1", "unidad": "puñado", "nombre": "Hojas de albahaca" }
+    ],
+    "pasos": [
+      "Preparar la masa mezclando harina, agua y levadura",
+      "Dejar leudar 1 hora",
+      "Estirar, cubrir con salsa, mozzarella y albahaca",
+      "Hornear a 250°C por 10-12 minutos"
+    ],
+    "categoria": "Platos Principales"
+  },
+  {
+    "id": 4,
+    "titulo": "Tacos de Carne",
+    "descripcion": "Tacos mexicanos con carne sazonada y vegetales frescos",
+    "imagen": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=800",
+    "tiempoPreparacion": "35 minutos",
+    "dificultad": "Fácil",
+    "porciones": 4,
+    "ingredientes": [
+      { "cantidad": "300", "unidad": "g", "nombre": "Carne molida" },
+      { "cantidad": "8", "unidad": "unidades", "nombre": "Tortillas de maíz" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Cebolla" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Pimiento rojo" },
+      { "cantidad": "1", "unidad": "cucharada", "nombre": "Condimento para tacos" }
+    ],
+    "pasos": [
+      "Saltear la carne con condimentos",
+      "Calentar las tortillas",
+      "Rellenar con carne y vegetales",
+      "Servir con salsa a gusto"
+    ],
+    "categoria": "Street Food"
+  },
+  {
+    "id": 5,
+    "titulo": "Panqueques con Dulce de Leche",
+    "descripcion": "Clásicos panqueques argentinos con dulce de leche",
+    "imagen": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=800",
+    "tiempoPreparacion": "25 minutos",
+    "dificultad": "Fácil",
+    "porciones": 4,
+    "ingredientes": [
+      { "cantidad": "250", "unidad": "ml", "nombre": "Leche" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Huevo" },
+      { "cantidad": "120", "unidad": "g", "nombre": "Harina" },
+      { "cantidad": "1", "unidad": "cucharada", "nombre": "Manteca derretida" },
+      { "cantidad": "200", "unidad": "g", "nombre": "Dulce de leche" }
+    ],
+    "pasos": [
+      "Mezclar todos los ingredientes de la masa",
+      "Cocinar finas capas en sartén antiadherente",
+      "Rellenar con dulce de leche y enrollar"
+    ],
+    "categoria": "Postres"
+  },
+  {
+    "id": 6,
+    "titulo": "Sopa de Calabaza",
+    "descripcion": "Sopa cremosa y reconfortante de calabaza",
+    "imagen": "https://images.unsplash.com/photo-1526318472351-c75fcf070305?w=800",
+    "tiempoPreparacion": "40 minutos",
+    "dificultad": "Fácil",
+    "porciones": 4,
+    "ingredientes": [
+      { "cantidad": "700", "unidad": "g", "nombre": "Calabaza" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Cebolla" },
+      { "cantidad": "1", "unidad": "diente", "nombre": "Ajo" },
+      { "cantidad": "600", "unidad": "ml", "nombre": "Caldo de verduras" },
+      { "cantidad": "100", "unidad": "ml", "nombre": "Crema" }
+    ],
+    "pasos": [
+      "Saltear cebolla y ajo",
+      "Agregar calabaza y caldo, cocinar hasta tierna",
+      "Licuar y agregar crema",
+      "Rectificar sal y pimienta"
+    ],
+    "categoria": "Sopas"
+  },
+  {
+    "id": 7,
+    "titulo": "Ramen Casero",
+    "descripcion": "Ramen japonés auténtico con caldo rico y fideos artesanales",
+    "imagen": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800",
+    "tiempoPreparacion": "3 horas",
+    "dificultad": "Difícil",
+    "porciones": 4,
+    "ingredientes": [
+      { "cantidad": "1", "unidad": "kg", "nombre": "Huesos de cerdo" },
+      { "cantidad": "500", "unidad": "g", "nombre": "Pechuga de pollo" },
+      { "cantidad": "2", "unidad": "unidades", "nombre": "Cebollas grandes" },
+      { "cantidad": "1", "unidad": "pieza", "nombre": "Jengibre fresco" },
+      { "cantidad": "4", "unidad": "dientes", "nombre": "Ajo" },
+      { "cantidad": "200", "unidad": "ml", "nombre": "Salsa de soja" },
+      { "cantidad": "100", "unidad": "ml", "nombre": "Sake" },
+      { "cantidad": "400", "unidad": "g", "nombre": "Fideos ramen" },
+      { "cantidad": "4", "unidad": "unidades", "nombre": "Huevos" },
+      { "cantidad": "200", "unidad": "g", "nombre": "Brotes de bambú" },
+      { "cantidad": "4", "unidad": "tiras", "nombre": "Alga nori" },
+      { "cantidad": "2", "unidad": "cucharadas", "nombre": "Aceite de sésamo" }
+    ],
+    "pasos": [
+      "Tostar los huesos de cerdo en el horno a 200°C por 30 minutos",
+      "En una olla grande, hervir los huesos tostados con agua fría durante 2 horas",
+      "Agregar el pollo, cebollas, jengibre y ajo, cocinar 1 hora más",
+      "Colar el caldo y reservar la carne",
+      "Agregar salsa de soja, sake y aceite de sésamo al caldo",
+      "Cocinar los fideos ramen según las instrucciones del paquete",
+      "Hervir los huevos durante 6 minutos para obtener yema cremosa",
+      "Pelar y cortar los huevos por la mitad",
+      "Calentar el caldo y servir sobre los fideos",
+      "Agregar la carne, brotes de bambú, alga nori y huevo",
+      "Servir inmediatamente bien caliente"
+    ],
+    "categoria": "Platos Principales"
+  },
+  {
+    "id": 8,
+    "titulo": "Croissants Artesanales",
+    "descripcion": "Croissants franceses caseros con mantequilla laminada y textura perfecta",
+    "imagen": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800",
+    "tiempoPreparacion": "8 horas",
+    "dificultad": "Difícil",
+    "porciones": 12,
+    "ingredientes": [
+      { "cantidad": "500", "unidad": "g", "nombre": "Harina de fuerza" },
+      { "cantidad": "10", "unidad": "g", "nombre": "Levadura fresca" },
+      { "cantidad": "50", "unidad": "g", "nombre": "Azúcar" },
+      { "cantidad": "10", "unidad": "g", "nombre": "Sal" },
+      { "cantidad": "250", "unidad": "ml", "nombre": "Leche tibia" },
+      { "cantidad": "300", "unidad": "g", "nombre": "Mantequilla fría" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Huevo para pintar" }
+    ],
+    "pasos": [
+      "Disolver la levadura en la leche tibia con una cucharada de azúcar",
+      "Mezclar harina, azúcar restante y sal en un bowl grande",
+      "Agregar la leche con levadura y amasar hasta obtener una masa suave",
+      "Formar un cuadrado, envolver en film y refrigerar 1 hora",
+      "Estirar la mantequilla entre dos papeles hasta formar un rectángulo",
+      "Refrigerar la mantequilla 30 minutos",
+      "Estirar la masa en forma rectangular",
+      "Colocar la mantequilla en el centro y doblar la masa sobre ella",
+      "Realizar el primer doblez (técnica de laminado)",
+      "Refrigerar 1 hora y repetir el proceso de doblez 2 veces más",
+      "Refrigerar toda la noche (mínimo 8 horas)",
+      "Estirar la masa final a 4mm de grosor",
+      "Cortar triángulos y enrollar formando los croissants",
+      "Dejar leudar 2 horas a temperatura ambiente",
+      "Pintar con huevo batido",
+      "Hornear a 200°C por 15-20 minutos hasta dorar"
+    ],
+    "categoria": "Postres"
+  },
+  {
+    "id": 9,
+    "titulo": "Hummus Casero",
+    "descripcion": "Hummus cremoso y suave de garbanzos con tahini y limón",
+    "imagen": "https://images.pexels.com/photos/6419387/pexels-photo-6419387.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "tiempoPreparacion": "15 minutos",
+    "dificultad": "Fácil",
+    "porciones": 6,
+    "ingredientes": [
+      { "cantidad": "400", "unidad": "g", "nombre": "Garbanzos cocidos" },
+      { "cantidad": "3", "unidad": "cucharadas", "nombre": "Tahini" },
+      { "cantidad": "2", "unidad": "dientes", "nombre": "Ajo" },
+      { "cantidad": "1", "unidad": "unidad", "nombre": "Limón (jugo)" },
+      { "cantidad": "3", "unidad": "cucharadas", "nombre": "Aceite de oliva" },
+      { "cantidad": "1", "unidad": "cucharadita", "nombre": "Comino molido" },
+      { "cantidad": "1", "unidad": "pizca", "nombre": "Sal" },
+      { "cantidad": "2", "unidad": "cucharadas", "nombre": "Agua (si es necesario)" },
+      { "cantidad": "1", "unidad": "pizca", "nombre": "Pimentón dulce para decorar" }
+    ],
+    "pasos": [
+      "Escurrir y enjuagar los garbanzos cocidos",
+      "Pelar y picar los dientes de ajo",
+      "Exprimir el jugo del limón",
+      "En una procesadora, agregar los garbanzos, tahini, ajo y jugo de limón",
+      "Procesar hasta obtener una mezcla suave",
+      "Agregar el aceite de oliva, comino y sal",
+      "Procesar nuevamente hasta que esté cremoso",
+      "Si está muy espeso, agregar agua de a poco hasta lograr la consistencia deseada",
+      "Servir en un bowl y decorar con un chorrito de aceite de oliva y pimentón",
+      "Acompañar con pan pita o vegetales frescos"
+    ],
+    "categoria": "Aperitivos"
+  }
+]
+
+
+
+
