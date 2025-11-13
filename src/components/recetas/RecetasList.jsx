@@ -3,9 +3,32 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import RecetaCard from "./RecetaCard";
 import { useRecetas } from "../../contexts/RecetasContext";
+import { useSearchParams } from "react-router-dom";
+import { useMemo } from "react";
 
 export default function RecetasList() {
   const { recetas, isLoading, error } = useRecetas();
+  const [searchParams] = useSearchParams();
+  const filtro = searchParams.get("filtro");
+
+  // IDs de recetas por categoría
+  const desayunoMeriendaIds = [5, 8, 9]; // Panqueques, Croissants, Hummus
+  const almuerzoCenaIds = [1, 2, 3, 4, 6, 7]; // Pasta, Ensalada, Pizza, Tacos, Sopa, Ramen
+
+  // Filtrar recetas según el filtro activo
+  const recetasFiltradas = useMemo(() => {
+    if (!filtro) return recetas;
+    
+    if (filtro === "desayuno-merienda") {
+      return recetas.filter((receta) => desayunoMeriendaIds.includes(receta.id));
+    }
+    
+    if (filtro === "almuerzo-cena") {
+      return recetas.filter((receta) => almuerzoCenaIds.includes(receta.id));
+    }
+    
+    return recetas;
+  }, [recetas, filtro]);
 
   return (
     <Container sx={{ py: 4 }} maxWidth="lg">
@@ -44,7 +67,7 @@ export default function RecetasList() {
             },
           }}
         >
-          {recetas.map((receta) => (
+          {recetasFiltradas.map((receta) => (
             <Box
               key={receta.id}
               sx={{
