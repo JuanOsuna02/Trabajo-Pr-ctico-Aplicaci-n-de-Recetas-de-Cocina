@@ -1,122 +1,81 @@
-# 🍽️ Aplicación de Recetas
+# 🥗 Aplicación de Recetas - Juan Cruz Fernandez Osuna
 
-Una aplicación web moderna de recetas de cocina desarrollada con React, Material-UI y React Router DOM.
-
-## 📋 Descripción del Proyecto
-
-Esta aplicación permite a los usuarios explorar un catálogo de recetas de cocina con información detallada. Incluye:
-
-- **Listado de Recetas**: Grid responsive con cards que muestran información básica de cada receta
-- **Detalle de Receta**: Vista completa con ingredientes, pasos de preparación y toda la información necesaria
-- **Navegación fluida**: Sistema de rutas para moverse entre el listado y los detalles
-
-## 🛠️ Tecnologías Utilizadas
-
-- ⚛️ **React 19** - Biblioteca para construir interfaces de usuario
-- 🎨 **Material-UI 7** - Framework de componentes React
-- 🧭 **React Router DOM 7** - Enrutamiento para aplicaciones React
-- 📦 **Vite** - Herramienta de construcción y desarrollo
-
-## 📦 Instalación
-
-1. Clona el repositorio o descarga el proyecto
-2. Abre una terminal en la carpeta del proyecto
-3. Instala las dependencias:
-
-```bash
-npm install
-```
-
-## 🚀 Instrucciones de Ejecución
-
-Para ejecutar la aplicación en modo desarrollo:
-
-```bash
-npm run dev
-```
-
-La aplicación estará disponible en `http://localhost:5173` (o el puerto que Vite asigne).
-
-Para construir la versión de producción:
-
-```bash
-npm run build
-```
-
-Para previsualizar la versión de producción:
-
-```bash
-npm run preview
-```
-
-## 📂 Estructura del Proyecto
-
-```
-src/
-├── components/
-│   ├── recetas/
-│   │   ├── RecetaCard.jsx          # Card individual de receta
-│   │   ├── RecetasList.jsx          # Lista de recetas con grid
-│   │   ├── RecetaDetalle.jsx        # Vista detallada de receta
-│   │   └── IngredientesList.jsx     # Lista de ingredientes
-│   └── layout/
-│       └── Navbar.jsx               # Barra de navegación
-├── contexts/
-│   └── RecetasContext.jsx           # Context API para gestión de recetas
-├── data/
-│   └── recetas.json                 # Base de datos de recetas (6+ recetas)
-├── pages/
-│   ├── RecetasListPage.jsx          # Página de listado
-│   └── RecetaDetallePage.jsx        # Página de detalle
-├── App.jsx                           # Componente principal con rutas
-├── main.jsx                          # Punto de entrada
-└── theme.js                          # Configuración del tema Material-UI
-```
-
-## 🎯 Funcionalidades
-
-### Listado de Recetas (`/recetas`)
-
-- Grid responsive:
-  - 1 columna en móvil
-  - 2 columnas en tablet
-  - 3 columnas en desktop
-- Cada card muestra:
-  - Imagen de la receta
-  - Título
-  - Descripción breve
-  - Tiempo de preparación
-  - Dificultad (Fácil/Media/Difícil)
-  - Porciones
-  - Botón "Ver Receta"
-
-### Detalle de Receta (`/recetas/:id`)
-
-- Información completa:
-  - Imagen destacada
-  - Título y descripción
-  - Datos generales (tiempo, dificultad, porciones)
-  - Lista de ingredientes con cantidad, unidad y nombre
-  - Pasos de preparación numerados
-  - Botón "Volver al Listado"
-
-## 📊 Características Técnicas
-
-- **Context API**: Gestión centralizada del estado de las recetas
-- **React Router DOM**: Navegación entre páginas
-- **Material-UI**: Componentes modernos y responsive
-- **Diseño Responsive**: Adaptable a diferentes tamaños de pantalla
-
-## 📝 Notas
-
-- El proyecto incluye 6 recetas completas en formato JSON
-- Todas las imágenes son enlaces externos (Unsplash)
-- La aplicación es completamente frontend, sin backend requerido
-
-## 👨‍💻 Autor
-
-Desarrollado como Trabajo Práctico de Programación.
+## ✨ Descripción
+Aplicación web para explorar y visualizar recetas culinarias. Permite filtrar recetas según el momento del día, ver ingredientes y pasos detallados, todo en una interfaz moderna, profesional y adaptable a cualquier dispositivo.
 
 ---
 
-¡Disfruta explorando las recetas! 🍳
+## 🚀 Tecnologías Utilizadas
+- ⚛️ **React 19.1.1**
+- 🔗 **React Router DOM 7.8.2**
+- 🎨 **Material-UI 7.3.2**
+- ⚡ **Vite**
+
+---
+
+## 📦 Instalación y Ejecución
+
+1. 📥 Clonar el repositorio o descargar el archivo zip
+2. 📦 Instalar las dependencias:
+   ```bash
+   npm install
+   ```
+3. 🏁 Ejecutar el proyecto:
+   ```bash
+   npm run dev
+   ```
+4. 🌐 Abrir la aplicación en el navegador: [http://localhost:5173]
+
+---
+
+## 📁 Estructura del Proyecto
+```
+src/
+├── components/      # Componentes de la interfaz (Navbar, Cards…)
+│   └── layout/
+│   └── recetas/
+├── contexts/
+├── data/            # recetas.json
+├── pages/           # Vistas de listado y detalle
+├── App.jsx
+└── main.jsx
+```
+---
+
+## 🍳 Funcionalidades
+- 👁️ Visualización de recetas en grilla responsiva
+- 🔎 Buscador rápido por título en la navbar
+- 🔍 Filtro de recetas por desayuno/merienda y almuerzo/cena en la navbar
+- 📄 Panel de detalles: ingredientes, pasos, dificultad, imagen destacada
+- 🧭 Navegación fluida entre vistas (sin recarga)
+- 📤 Botón "Compartir" (copia el link de la receta al portapapeles)
+- ⚠️ Página visual de "Receta no encontrada" (404) si la receta no existe
+- 🎨 Diseño adaptable y colorido con paleta azul/verde
+
+
+---
+
+## 🖼️ Captura de Pantalla
+Vista principal de la aplicación:
+
+![Home App de Recetas](public/screenshot-home.png)
+
+---
+
+## 🛑 Prueba la página de error 404
+Si accedés a una receta inexistente, la aplicación muestra una página visual de error. Podés comprobarlo accediendo a:
+
+[Ver ejemplo de página 404](http://localhost:5173/recetas/9999)
+
+**Captura de la página 404:**
+
+![Página 404 de Recetas](public/screenshot-404.png)
+
+---
+
+## 👨‍💻 Autor
+Juan Cruz Fernandez Osuna · juancruz.fo@gmail.com
+
+---
+Trabajo académico realizado con dedicación, organización y atención al detalle.
+

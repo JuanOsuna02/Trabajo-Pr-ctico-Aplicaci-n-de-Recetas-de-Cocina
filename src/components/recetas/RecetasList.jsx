@@ -10,6 +10,7 @@ export default function RecetasList() {
   const { recetas, isLoading, error } = useRecetas();
   const [searchParams] = useSearchParams();
   const filtro = searchParams.get("filtro");
+  const buscar = searchParams.get("buscar")?.toLowerCase() || "";
 
   // IDs de recetas por categoría
   const desayunoMeriendaIds = [5, 8, 9]; // Panqueques, Croissants, Hummus
@@ -17,18 +18,17 @@ export default function RecetasList() {
 
   // Filtrar recetas según el filtro activo
   const recetasFiltradas = useMemo(() => {
-    if (!filtro) return recetas;
-    
+    let r = recetas;
     if (filtro === "desayuno-merienda") {
-      return recetas.filter((receta) => desayunoMeriendaIds.includes(receta.id));
+      r = r.filter((receta) => desayunoMeriendaIds.includes(receta.id));
+    } else if (filtro === "almuerzo-cena") {
+      r = r.filter((receta) => almuerzoCenaIds.includes(receta.id));
     }
-    
-    if (filtro === "almuerzo-cena") {
-      return recetas.filter((receta) => almuerzoCenaIds.includes(receta.id));
+    if (buscar) {
+      r = r.filter((receta) => receta.titulo.toLowerCase().includes(buscar));
     }
-    
-    return recetas;
-  }, [recetas, filtro]);
+    return r;
+  }, [recetas, filtro, buscar]);
 
   return (
     <Container sx={{ py: 4 }} maxWidth="lg">

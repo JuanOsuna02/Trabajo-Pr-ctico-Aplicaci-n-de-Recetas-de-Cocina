@@ -9,14 +9,26 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import { AccessTime, People, ArrowBack } from "@mui/icons-material";
+import { AccessTime, People, ArrowBack, Share as ShareIcon } from "@mui/icons-material";
 import IngredientesList from "./IngredientesList";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Tooltip from '@mui/material/Tooltip';
+import IconButton from '@mui/material/IconButton';
+import { useState as useCopyState } from 'react';
 
 export default function RecetaDetalle({ receta }) {
   const navigate = useNavigate();
   const [imageError, setImageError] = useState(false);
+  const [copyLabel, setCopyLabel] = useCopyState('Copiar link');
+
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href)
+      .then(() => {
+        setCopyLabel('¡Copiado!');
+        setTimeout(() => setCopyLabel('Copiar link'), 1300);
+      });
+  };
 
   if (!receta) {
     return (
@@ -50,32 +62,41 @@ export default function RecetaDetalle({ receta }) {
 
   return (
     <Container sx={{ py: 4 }} maxWidth="md">
-      <Button
-        variant="outlined"
-        startIcon={<ArrowBack />}
-        onClick={() => navigate("/recetas")}
-        sx={{
-          mb: 3,
-          px: 3,
-          py: 1.5,
-          borderRadius: "12px",
-          borderColor: "#667eea",
-          color: "#667eea",
-          fontWeight: 600,
-          fontSize: "1rem",
-          textTransform: "none",
-          "&:hover": {
-            borderColor: "#5568d3",
-            bgcolor: "#667eea",
-            color: "white",
-            boxShadow: "0 4px 12px rgba(102, 126, 234, 0.3)",
-            transform: "translateY(-2px)",
-          },
-          transition: "all 0.3s ease",
-        }}
-      >
-        Volver al Listado
-      </Button>
+      <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, gap: 1 }}>
+        <Button
+          variant="outlined"
+          startIcon={<ArrowBack />}
+          onClick={() => navigate("/recetas")}
+          sx={{
+            mb: 2,
+            px: 3,
+            py: 1.5,
+            borderRadius: "12px",
+            borderColor: "#667eea",
+            color: "#667eea",
+            fontWeight: 600,
+            fontSize: "1rem",
+            textTransform: "none",
+            "&:hover": {
+              borderColor: "#5568d3",
+              bgcolor: "#667eea",
+              color: "white",
+              boxShadow: "0 4px 12px rgba(102, 126, 234, 0.3)",
+              transform: "translateY(-2px)",
+            },
+            transition: "all 0.3s ease",
+          }}
+        >
+          Volver al Listado
+        </Button>
+        {receta && (
+          <Tooltip title={copyLabel} arrow>
+            <IconButton aria-label="compartir" color="primary" onClick={handleShare} sx={{ ml: 1, bgcolor: '#E3F8F6', p: 1, '&:hover': { bgcolor: '#00b894', color: '#fff' } }}>
+              <ShareIcon />
+            </IconButton>
+          </Tooltip>
+        )}
+      </Box>
       <Paper elevation={0} sx={{ p: 2, borderRadius: 3, boxShadow: "0 10px 30px rgba(0,0,0,0.06)" }}>
         {imageError ? (
           <Box
